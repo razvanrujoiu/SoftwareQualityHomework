@@ -1,18 +1,19 @@
+import org.junit.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
-class PassengerTest {
+public class PassengerTestCase {
 
     private static final String PASSENGER_NAME = "Razvan";
 
-    @org.junit.jupiter.api.Test
-    void setPassengerName() {
+
+    @Test
+    public void testSetPassengerName() {
         Passenger passenger = new Passenger();
         passenger.setPassengerName(PASSENGER_NAME);
         assertEquals(PASSENGER_NAME, passenger.getPassengerName());
     }
 
-    @org.junit.jupiter.api.Test
-    void setPassengerRating() {
-    }
+
 }

@@ -33,6 +33,22 @@ public class Trip {
         this.distanceInKilometers = distanceInKilometers;
     }
 
+    public Passenger getPassenger() {
+        return passenger;
+    }
+
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
+    }
+
+    public Taxi getTaxi() {
+        return taxi;
+    }
+
+    public void setTaxi(Taxi taxi) {
+        this.taxi = taxi;
+    }
+
     public double getTimeInMinutes() {
         return timeInMinutes;
     }
@@ -53,7 +69,8 @@ public class Trip {
         return priceInLei;
     }
 
-    public void setPriceInLei(double priceInLei) {
+    public void setPriceInLei(double timeInMinutes, double distanceInKilometers) {
         this.priceInLei = timeInMinutes * 1.1 + distanceInKilometers * 1.5;
     }
 }
+
