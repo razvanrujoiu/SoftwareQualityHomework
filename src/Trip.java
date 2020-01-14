@@ -33,6 +33,13 @@ public class Trip {
         this.distanceInKilometers = distanceInKilometers;
     }
 
+    public Trip(Passenger passenger, Taxi taxi, double timeInMinutes, double distanceInKilometers) {
+        this.passenger = passenger;
+        this.taxi = taxi;
+        this.timeInMinutes = timeInMinutes;
+        this.distanceInKilometers = distanceInKilometers;
+    }
+
     public Passenger getPassenger() {
         return passenger;
     }

@@ -14,6 +14,12 @@ public class Taxi {
         this.tripsList = new ArrayList<>();
     }
 
+    public Taxi(String driverName, String licensePlate, double rating) {
+        this.driverName = driverName;
+        this.licensePlate = licensePlate;
+        this.rating = rating;
+    }
+
     public Taxi(String driverName, String licensePlate, double rating, List<Trip> tripsList) {
         this.driverName = driverName;
         this.licensePlate = licensePlate;
